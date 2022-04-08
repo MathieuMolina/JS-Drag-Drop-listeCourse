@@ -12,6 +12,10 @@ p{
     font-size: 20px;
 }
 
+/* ul{
+    padding: 0;
+} */
+
 #text1, #text2{
     margin-left: 50px;
 }
@@ -48,7 +52,7 @@ p{
 
 
 .tenu {
-    border: solid 5px #ccc;
+    border: solid 5px rgb(0, 0, 0);
 }
 
 .hovered {
