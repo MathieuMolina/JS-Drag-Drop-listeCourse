@@ -1,0 +1,33 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input{
+    margin-left: 50px;
+    width: 400px;
+}
+
+#liste{
+    margin-left: 50px;
+    background-color: rgb(47, 141, 208);
+    height: 600px;
+    width: 400px;
+}
+
+#reste{
+    background-color: rgb(106, 86, 86);
+    height: 300px;
+    width: 600px;
+}
+
+#maison{
+    background-color: rgb(106, 86, 86);
+    height: 300px;
+    width: 600px;
+}
