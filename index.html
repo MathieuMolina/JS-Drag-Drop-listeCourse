@@ -12,17 +12,32 @@
     
 <section class="column col-4">
 
-    <input id="input" type="text" class="col-12">
-    <br><br><br><br>
-    <div id="liste"></div>
+    <form id="formulaire">
+        <p id="text1" >Ajouter un élément à la liste : </p>
+        
+        <input id="input" class="col-12" type="text" name="input" required minlength="2" maxlength="15" size="5">
+
+        <br><br>
+
+        <button id="valider">Valider</button>
+        
+        <br><br>
+
+        <p id="text2" >Liste des courses :</p>
+
+        <div id="liste"></div>
+    </form>
 
 </section>
 
 
 <section class="column col-8">
-
+    <p id="text3" >Reste à acheter :</p>
     <div id="reste"></div>
+
     <br><br><br><br>
+
+    <p id="text4" >Déjà à la maison :</p>
     <div id="maison"></div>
 
 </section>

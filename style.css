@@ -8,26 +8,50 @@ body{
     align-items: center;
 }
 
+p{
+    font-size: 20px;
+}
+
+#text1, #text2{
+    margin-left: 50px;
+}
+
 #input{
     margin-left: 50px;
     width: 400px;
 }
 
+#valider{
+    margin-left: 200px;
+    height: 50px;
+    width: 100px;
+}
+
 #liste{
     margin-left: 50px;
-    background-color: rgb(47, 141, 208);
+    background-color: rgb(99, 168, 217);
     height: 600px;
     width: 400px;
 }
 
 #reste{
-    background-color: rgb(106, 86, 86);
+    background-color: rgb(143, 212, 140);
     height: 300px;
     width: 600px;
 }
 
 #maison{
-    background-color: rgb(106, 86, 86);
+    background-color: rgb(143, 212, 140);
     height: 300px;
     width: 600px;
+}
+
+
+.tenu {
+    border: solid 5px #ccc;
+}
+
+.hovered {
+    background: #f4f4f4;
+    border-style: dashed;
 }
