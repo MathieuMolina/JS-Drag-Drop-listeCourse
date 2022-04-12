@@ -11,14 +11,10 @@ formulaire.addEventListener("submit", function(e){
     
     e.preventDefault();
     createElements();
-    // liste.innerHTML += input.value+" "+ "<br>";
+    supprimer()
 
-    
-
-    // Création bouton fermeture :
-
-    
 });
+
 function createElements(){
     let saisie = document.createElement("li");
     saisie.className = "tache";
@@ -28,12 +24,14 @@ function createElements(){
 
     liste.appendChild(saisie);
 
-    
+
     let btn = document.createElement("button");
     btn.classList = "croix";
     btn.innerText = "X";
 
     saisie.appendChild(btn);
+
+    
 }
 
 
@@ -113,3 +111,22 @@ function dragDrop() {
 // Vérifier qu'il fonctionne sur plusieurs éléments crées lors du drag & drop
 // puis COMMIT !
 
+
+
+
+// e.target.re!move(e.target.parent) remove pour récupérer le parent du li que l'on va supp
+
+
+function supprimer(){
+
+    let supp = document.querySelectorAll(".croix");
+
+    for(let i = 0; i < supp.length; i++){
+
+        supp[i].addEventListener("click", function(e){
+            console.log(e.target.parent)
+
+            e.target.parentNode.remove();
+        });
+    };
+};
