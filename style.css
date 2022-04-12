@@ -59,3 +59,13 @@ p{
     background: #f4f4f4;
     border-style: dashed;
 }
+
+
+/* Bouton de suppression : */
+
+.croix{
+    display: inline-block;
+    color: red;
+    text-align: center;
+    cursor: pointer;
+}

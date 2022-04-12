@@ -5,18 +5,21 @@ const maison = document.getElementById("maison");
 const box = document.querySelectorAll(".case");
 let item;
 
-
-// Chaque élements saisit doit être indépendant
-//créer à chaque fois un élément en JS sur la Liste, afin de le rendre autonome et sélectionnable
-
-
+// ----------------------------------------------------------------------------------------------------------------
 
 formulaire.addEventListener("submit", function(e){
     
     e.preventDefault();
-
+    createElements();
     // liste.innerHTML += input.value+" "+ "<br>";
 
+    
+
+    // Création bouton fermeture :
+
+    
+});
+function createElements(){
     let saisie = document.createElement("li");
     saisie.className = "tache";
 
@@ -25,7 +28,13 @@ formulaire.addEventListener("submit", function(e){
 
     liste.appendChild(saisie);
 
-});
+    
+    let btn = document.createElement("button");
+    btn.classList = "croix";
+    btn.innerText = "X";
+
+    saisie.appendChild(btn);
+}
 
 
 
@@ -89,3 +98,18 @@ function dragDrop() {
     this.append(item);
     console.log(this)
 }
+
+
+// Ajouter un bouton en forme de petite croix rouge à chaque rajout sur la liste pour le retirer =>
+
+// 1/ Créer un bouton via JS proche de là où on créer un li dynamiquement;
+
+// 2/ Attribuer chaque bouton "croix" à son parent ( li );
+
+// 3/ Ajouter une class en JS à ces boutons pour les retrouver en CSS;
+
+// 4/ Styliser la croix en CSS;
+
+// Vérifier qu'il fonctionne sur plusieurs éléments crées lors du drag & drop
+// puis COMMIT !
+
